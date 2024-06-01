@@ -3,7 +3,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.6.0
     hooks:
       - id: check-added-large-files
         args: ["--maxkb=1000"]
@@ -17,7 +17,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/schmir/pre-commit-go-hooks
-    rev: "68cb849a91a20af3ad5cccefc5a6fecc41785bce"
+    rev: "714ba3b45c87543bb6bc74a511b2da5238e93f38"
     hooks:
       - id: gci
         args:
@@ -27,4 +27,4 @@ repos:
             "-sDefault",
             "-sPrefix(github.com/schmir/temple-go)",
           ]
-      - id: gofumpt
+      - id: golines-gofumpt
